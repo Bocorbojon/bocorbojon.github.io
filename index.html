@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--"!DOCTYPE html" is a leftover from immemorial times
+it is necessary for the document to behave correctly-->
+<html lang="es-419">
+  <!--<html> element is the root element which contains all the content of the page-->
+  <!--language tag-->
+
+  <head>
+    <meta charset="utf-8" />
+    <!--character set. UTF-8 contains most characters from the majority of written languages-->
+    <meta name="viewport" content="width=device-width" />
+    <!--this is a void element, it just has oppening tag "<meta" but not closing tag, 
+    just a "/>" -->
+    <title>My test page</title>
+    <!--this is a title element-->
+
+    <link href="styles/style.css" rel="stylesheet" />
+    <!--to apply css to the HTML page-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia+Sans"
+    />
+    <!--to apply a Google Font-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia+Sans+Semi+Condensed"
+    />
+  </head>
+
+  <body>
+    <button id="btn-change-user">Change user</button>
+    <div id="titles">
+      <h1>Porcupine Tree</h1>
+      <h3>Lightbulb Sun</h3>
+    </div>
+
+    <p class="album-review">
+      <!--a class is for grouping multiple elements and giving them the same style with just one CSS ruleset command-->
+      Divorce album. The song <i>Where We Would Be</i> has the most beautiful guitar solo I've ever listened to. You can check more info about the album
+      <a
+        title="Link de RYM"
+        href="https://rateyourmusic.com/release/album/65daysofstatic/one-time-for-all-time/"
+        >here.</a
+      >
+    </p>
+
+    <p class="tracklist">Tracklist</p>
+    <ol class="tracklist">
+      <li title="Track 1">Lightbulb Sun</li>
+      <li title="Track 2">How Is Your Life Today?</li>
+      <li title="Track 3">Four Chords That Made A Million</li>
+      <li title="Track 4">Shesmovedon</li>
+      <li title="Track 5">Last Chance To Evacuate Planet Earth Before It Is Recycled</li>
+      <ol id="last-chance-tracklist" type="a">
+        <li>Winding Shot (Summer 1981)</li>
+        <li>Last Change To Evacuate Planet Earth Before It Is Recycled</li>
+      </ol>
+      <li title="Track 6">The Rest Will Flow</li>
+      <li title="Track 7">Hatesong</li>
+      <li title="Track 8">Where We Would Be</li>
+      <li title="Track 9">Russia On Ice</li>
+      <li title="Track 10">Feel So Low</li>
+    </ol>
+
+    <div id="container-comments">
+      <!--a div is a container-->
+      <p class="user-comments">
+        Now let's see some comments from our loyal RYM users:
+      </p>
+      <ul class="user-comments" id="user-comment-list">
+        <li title="Opinion 1">"Great album" - parito2000, RYM user</li>
+        <li title="Opinion 2">"Great shit" - dasgvu, RYM user</li>
+      </ul>
+    </div>
+
+    <p id="par1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur
+      nobis aliquam vel soluta iusto, mollitia earum numquam dolore natus
+      repudiandae dolores est minus accusantium odit sapiente quos adipisci?
+      Quaerat!
+    </p>
+    <p id="par2">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem pariatur
+      ratione est tempora iusto nemo reprehenderit! Quibusdam recusandae vero
+      dicta neque vitae aliquam nulla adipisci voluptas quis sit, placeat fuga.
+    </p>
+
+    <img
+      id="album-cover"
+      src="images/lightbulb1.jpg"
+      alt="Album cover: Porcupine Tree - Lightbulb Sun"
+      height="500"
+    />
+
+    <button id="restore-btn">Restore cover</button>
+
+    <script src="scripts/main.js"></script>
+    <!-- the scripts should be at the end to guarantee it will be executed until the element on the HTML page exists -->
+  </body>
+</html>
+
+<!--in an HTML element we have attributes, such as the att src on the <img element>-->

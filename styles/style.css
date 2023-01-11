@@ -1,0 +1,111 @@
+/*
+If we just put html or p, is an element selector, selecting <html> or <p>
+*/
+html {
+  /* whole page */
+  background-color: rgba(0, 183, 255, 0.548);
+  padding: 10px 20px;
+}
+
+body {
+  /* where the text and all the elements are */
+  background-color: aliceblue;
+  width: 800px;
+  margin: 0px auto; /* shorthand margin property: top right bottom left. In this case, just top and then auto all other sides */
+  padding: 0px 20px 40px 20px;
+  font-family: "Sofia Sans", serif;
+}
+
+/* Titles is a div with id=titles */
+#titles {
+  font-family: "Sofia Sans Semi Condensed", serif;
+}
+h1 {
+  margin: 0; /* to put the h1 right at the top of the body */
+  padding-top: 25px;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+}
+h3 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  font-style: italic;
+}
+
+/* 
+using . for class-selection 
+ */
+.tracklist {
+  /* .tracklist refers to elements with class="tracklist" in my HTML doc */
+  list-style-type: inside;
+  color: rgb(184, 82, 82);
+} /* all this is a CSS ruleset */
+/* the "attributes" like color, list-style-type and such are called properties 
+as there are two elements with class tracklist, one <p> and one <ol>, this ruleset is
+applied to both*/
+
+/* this is how we select the elements of class .album-review and apply the ruleset */
+.album-review {
+  color: rgb(206, 85, 85);
+}
+
+/* container-comments is a div, a container */
+#container-comments {
+  color: rgb(32, 173, 131);
+  text-align: center;
+  width: 400px;
+  padding: 0px 10% 0px 10%; /* I think percentage is with respect to the established margins */
+  border: 10px groove rgb(206, 85, 85);
+  margin: auto; /* margin: auto is to align the whole element to the center */
+}
+#user-comment-list {
+  list-style-type: none;
+}
+
+/* this is how we apply the same ruleset to two different elements, using commas */
+#par1,
+#par2 {
+  color: rgb(0, 119, 255);
+  text-align: center;
+}
+
+/* Selecting the link element <a> with state hover */
+a:hover {
+  font-size: xx-large;
+  color: rgb(32, 173, 131);
+  border: 60px groove;
+  width: 60%;
+}
+
+#album-cover {
+  /* an image is an inline element. Here, we give it a block behavior */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Giving style to the "restore image" button */
+#restore-btn {
+  display: none;
+  border-radius: 10px 5%;
+  color: rgba(211, 34, 34, 0.863);
+  font-size: xx-large;
+  font-family: "Sofia Sans Semi Condensed", serif;
+  margin: auto;
+}
+#btn-change-user {
+  display: block;
+  float: right;
+  border-radius: 5px 5%;
+}
+/* using the semicolon is a pseudo-class selector, because it only points to the element on a certain state. In this case,  */
+button:hover {
+  opacity: 1;
+  background-color: rgba(177, 211, 211, 0.377);
+}
+button:active {
+  background-color: rgba(177, 211, 211, 0.788);
+}
